@@ -1,7 +1,6 @@
 package org.generation.lojadegames.repository;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.generation.lojadegames.model.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;

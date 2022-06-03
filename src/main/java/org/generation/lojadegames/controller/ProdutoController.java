@@ -1,7 +1,6 @@
 package org.generation.lojadegames.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import javax.validation.Valid;
 
@@ -52,7 +51,7 @@ public class ProdutoController {
 	
 	@GetMapping("/precomenorouigual/{preco}")
 	public ResponseEntity<List<Produto>> buscaPorPrecoMenorOuIgual(@PathVariable Double preco){
-		return ResponseEntity.ok(repository.findByPrecoGreaterThanEqual(preco));
+		return ResponseEntity.ok(repository.findByPrecoLessThanEqual(preco));
 	}
 	
 	@GetMapping("/precomaior/{preco}")
